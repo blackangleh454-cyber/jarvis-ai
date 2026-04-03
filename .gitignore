@@ -1,0 +1,69 @@
+# Environment files (API keys, secrets)
+.env
+.env.local
+.env.*
+*.env
+secrets.json
+config.secrets.json
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environment
+venv/
+.venv/
+env/
+.env/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Logs
+logs/
+*.log
+
+# Memory and database (user-specific)
+memory/*.db
+memory/working.json
+*.sqlite
+*.sqlite3
+
+# Learnings (can be regenerated)
+.learnings/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Temp files
+tmp/
+temp/
+*.tmp
+
+# Test files
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Distribution files
+*.whl
+
+# macOS
+.DS_Store
+
+# Secret files
+*.pem
+*.key
+credentials.json

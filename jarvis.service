@@ -1,0 +1,16 @@
+[Unit]
+Description=J.A.R.V.I.S AI Agent
+After=network.target graphical.target
+
+[Service]
+Type=simple
+User=mirza
+WorkingDirectory=/home/mirza/Desktop/J.A.R.V.I.S
+ExecStart=/usr/bin/python3 /home/mirza/Desktop/J.A.R.V.I.S/agent.py console
+Restart=on-failure
+RestartSec=10
+Environment=DISPLAY=:0
+Environment=XAUTHORITY=/home/mirza/.Xauthority
+
+[Install]
+WantedBy=multi-user.target
